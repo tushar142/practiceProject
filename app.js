@@ -32,17 +32,20 @@ let head = document.querySelector(".header_wraper")
 lines.addEventListener("click", function(){
 	sideNav.classList.toggle('active')
 	modal.classList.toggle('modalblock')
+	head.classList.add('header')
+
 })
 
 modal.addEventListener("click", function(){
 	sideNav.classList.remove('active')
 	modal.classList.remove('modalblock')
+	head.classList.remove('header')
 })
 
  window.onscroll = function() {
       var top = window.scrollY;
 
-      if (top >= 24) {
+      if (top >= 10) {
         head.classList.add('headbg')
       }else {
         head.classList.remove('headbg')
