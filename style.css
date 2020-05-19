@@ -4,6 +4,8 @@
 	padding: 0;
 	box-sizing: border-box;
 	outline: none;
+	-webkit-tap-highlight-color: transparent;
+
 }
 
 body{
@@ -24,12 +26,17 @@ header{
 	position: relative;
 	padding: 1rem 1rem 1rem 1rem;
 	transition: all .4s ease-in-out;
+	z-index: 100;
 }
 
 .headbg{
 	background: #5e2ced;
 	transition: all .4s ease-in-out;
 	padding: .5rem .5rem .5rem .5rem;
+}
+
+.header_wraper.header{
+	display: none;
 }
 
 .logo_container{
@@ -142,11 +149,8 @@ header{
 	opacity: 1;
 	height: 100vh;
 	background: rgba(0, 0, 0, .7);
-	transform: all .4s ease;
-	z-index: -1111;
+	z-index: 1111;
 }
-
-
 
 
 /*============================banner section================*/
@@ -233,6 +237,7 @@ header{
 	padding-top: 2.5rem;
 	background: #fff;
 	height: 100%;
+	position: relative;
 }
 .service_head{
 	text-align: center;
@@ -315,6 +320,7 @@ header{
 	background: #292dc2;
 	height: 30rem;
 	width: 100%;
+	position: relative;
 }
 
 .ready_wraper{
@@ -388,6 +394,7 @@ header{
 
 .testimonial{
 	padding: 3rem 0;
+	position: relative;
 }
 
 .testi_head{
@@ -449,6 +456,7 @@ header{
 /*==================================Process================*/
 
 .process{
+	position: relative;
 	padding: 3rem 0;
 	height: 100%;
 	width: 100%;
@@ -554,6 +562,7 @@ header{
 
 .footer{
 	padding-top: 3rem;
+	position: relative;
 }
 
 .footer_wraper{
@@ -692,14 +701,11 @@ header{
 	text-align: center;
 }
 
-.copyright p{
+.copyright p,
+.copyright2 p{
 	color: #939393;
 	font-size: 14px;
 	font-weight: normal;
 }
 
-.copyright2 p{
-	color: #939393;
-	font-weight: normal;
-}
 
