@@ -28,27 +28,31 @@ let modal = document.querySelector(".modal")
 
 let head = document.querySelector(".header_wraper")
 
+let headmain = document.getElementsByName("header")
+
 
 lines.addEventListener("click", function(){
 	sideNav.classList.toggle('active')
 	modal.classList.toggle('modalblock')
-	head.classList.add('header')
+	head.classList.add('headremove')
 
 })
 
 modal.addEventListener("click", function(){
 	sideNav.classList.remove('active')
 	modal.classList.remove('modalblock')
-	head.classList.remove('header')
+	head.classList.remove('headremove')
 })
 
  window.onscroll = function() {
       var top = window.scrollY;
 
       if (top >= 10) {
+
         head.classList.add('headbg')
       }else {
-        head.classList.remove('headbg')
+
+    	head.classList.remove('headbg')
       }
     };
 
