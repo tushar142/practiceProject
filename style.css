@@ -332,6 +332,23 @@ header.headbgg{
 	}
 }
 
+@media only screen and (max-height: 445px){
+	.bottom_wave svg{
+		bottom: -50px;
+	}
+	.banner_text{
+		width: 40%;
+		position: relative;
+		top: 100px;
+		right: 20%;
+	}
+	.bannerimg{
+		position: absolute;
+		top:40%;
+		left: 30%;
+	}
+}
+
 @media only screen and (min-width: 768px){
 	.banner_section{
 		height: 100vh;
@@ -367,7 +384,7 @@ header.headbgg{
 		display: flex;
 		justify-content: center;
 		align-items: center;
-		height: 100vh
+		height: 100%;
 	}
 	.banner_text{
 		width: 40%;
@@ -380,7 +397,7 @@ header.headbgg{
 	}
 	.bannerimg{
 		position: absolute;
-		top:40%;
+		top:50%;
 		left: 30%;
 	}
 
