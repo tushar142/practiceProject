@@ -107,14 +107,28 @@ header.headbgg{
 
 .header_nav_ul li{
 	text-align: center;
+
 }
 
-.header_nav_ul li a{
+
+
+.header_nav_ul li a:nth-child(1){
+	animation: slideli all ;
 	color: #fff;
 	text-decoration: none;
 	font-size: 1.5rem;
 	padding: 1rem;
 	display: block;
+}
+
+@keyframes slideli {
+	from{
+		opacity: 0;
+	}
+
+	to{
+		opacity: .2;
+	}
 }
 .header_nav_ul li a:hover{
 	background: #508EE3;
@@ -199,7 +213,7 @@ header.headbgg{
 		opacity: 0;
 	}
 	.header_wraper{
-		padding: 1rem 1rem;
+		padding: 1.5rem 1rem;
 	}
 	.header_nav,
 	.lines{
@@ -210,12 +224,32 @@ header.headbgg{
 		list-style: none;
 	}
 
+	.pc_nav li{
+		margin-left: 2rem;
+	}
+
 	.pc_nav li a{
 	color: #fff;
 	text-decoration: none;
 	font-size: 1.5rem;
-	padding: 1rem;
-	display: block;
+	padding: 1rem 0;
+	position: relative;
+	 transition: all 0.4s linear;
+}
+
+.pc_nav li a:before{
+    content: '';
+    position: absolute;
+    top: 75%;
+    left: 0;
+    width: 0;
+    height: 2px;
+    border-bottom: 2px solid #fff;
+    transition: all 0.4s linear;
+}
+
+.pc_nav li a:hover:before{
+	width: 100%;
 }
 	.headbg{
 		padding: .3rem 0rem .3rem 0rem;
@@ -389,7 +423,7 @@ header.headbgg{
 	.banner_text{
 		width: 40%;
 		position: relative;
-		top: 20%;
+		top: 30%;
 		right: 30%;
 	}
 	.banner_text h1{
@@ -402,7 +436,7 @@ header.headbgg{
 	}
 
 	.bottom_wave svg{
-		bottom: -100px;}
+		bottom: -80px;}
 }
 /*====================Service Section============*/
 
@@ -606,6 +640,11 @@ header.headbgg{
 	background: linear-gradient(-45deg, #5e2ced, #a485fd);
 	border-radius: 30px;
 	margin-bottom: 2rem;
+	transition: 200ms all ease-in-out;
+}
+
+.ready_info a:nth-child(odd):hover{
+	box-shadow: inset .5px .5px 2px .5px #000;
 }
 
 .ready_info a:nth-child(even){
@@ -619,6 +658,11 @@ header.headbgg{
 	text-transform: uppercase;
 	background: linear-gradient(-45deg, #5e2ced, #a485fd);
 	border-radius: 30px;
+	transition: 200ms all ease-in-out;
+}
+
+.ready_info a:nth-child(even):hover{
+	box-shadow: inset .5px .5px 2px .5px #000;
 }
 
 
@@ -945,6 +989,7 @@ header.headbgg{
     text-align: center;
     width: 35px;
     text-decoration: none;
+    vertical-align: middle;
 }
 
 .social_links li:hover{
@@ -973,12 +1018,15 @@ header.headbgg{
 
 .footer_links li{
 	margin-bottom: .8rem;
+	transition: 200ms all ease-in-out;
+
 }
 
 .footer_links li a{
 	text-decoration: none;	
 	color: #000;
 	position: relative;	
+	display: block;
 }
 
 .footer_links li a:before{
@@ -987,6 +1035,12 @@ header.headbgg{
     font-family: Font Awesome\ 5 Free;
     color: #232323;
     padding-right: 10px;
+}
+
+
+.footer_links li:hover{
+	transform: translateX(15px);
+	transition: 200ms all ease-in-out;
 }
 
 
@@ -1018,7 +1072,7 @@ header.headbgg{
 }
 
 .footer_lines{
-	padding: 1rem 1rem
+	padding: .8rem 1rem
 
 }
 
